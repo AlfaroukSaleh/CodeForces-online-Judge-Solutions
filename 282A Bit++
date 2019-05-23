@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+#include<iomanip>
+using namespace std;
+int main (){
+  
+    int x=0;
+    int numOfLines ; 
+    cin >>numOfLines;
+    string operand;
+    for (int i=0;i<numOfLines;i++){
+            cin>>operand;
+            
+            if  (operand == "++X") ++x;
+            else if  (operand == "X++") x++;
+            else  if  (operand == "--X") --x;
+            else if  (operand == "X--") x--;
+           
+    }
+    
+    cout <<x<<endl;
+    return 0;
+
+
+}
